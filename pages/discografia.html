@@ -5,22 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proyecto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     <header>
-        <nav class="nav_flex">
-            <a href="../index.html"><img class="portada" src="../images/kings-of-convenience-514c239a928d6.png" alt="Logo"></a>
-            
-            <ul>
-                <li class="lista_nav"><a class="navli" href="../pages/biografia.html">Biografía</a></li>
-                <li class="lista_nav"><a href="../pages/fechas.html">Fechas</a></li>
-                <li class="lista_nav"><a href="../pages/discografia.html">Discografía</a></li>
-                <li class="lista_nav"><a href="../pages/contacto.html">Contacto</a></li>
+        <div>
+          <nav class="nav_flex">
+          <a href="../index.html"><img class="portada" src="../images/logo.png" alt="Logo"></a>
+        </div>
+        
+        <div class="nav_boot">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active text-warning" aria-current="page" href="../pages/biografia.html">Biografía</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-warning" href="../pages/fechas.html">Fechas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-warning" href="../pages/discografia.html">Discografía</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link text-warning"  href="../pages/contacto.html">Contacto</a> 
+                </li>
             </ul>
-            </ul>
-              
-        </nav>
+          </div>
+       
+        
     </header>
 
     <main class="discografia_grid"> <!--Secciòn discografìa con tabla-->
@@ -28,54 +40,59 @@
             <h1 class="titulo_disco">Discografía</h1>  
         </div>
 
-        <div class="tabla_grid">
-            <table>
-                <tr class="cabecera">
-                    <th>Disco</th>
-                    <th>Salida</th>
-                    <th>Canciones</th>
-                </tr>
-                <tr>
-                    <td class="img_disco"><img class="img_data" src="../images/avatars-000212492314-s5w3iq-t500x500.jpg" alt="cover" width="250"></td>
-                    <td class="cabecera_salida">29/01/2001</td>
-                    <td>
-                        <ol>
-                            <li class="temas">Winning A Battle, Losing The War</li>
-                            <li class="temas">Toxic Girl</li>
-                            <li class="temas">Singing Softly To Me</li>
-                            <li class="temas">I Don't Know What I Can Save You From</li>
-                            <li class="temas">Failure</li>
-                            <li class="temas">The Weight Of My Words</li>
-                            <li class="temas">The Girl From Back Then</li>
-                            <li class="temas">Leaning Against The Wall</li>
-                            <li class="temas">Little Kids</li>
-                            <li class="temas">Summer On The Westhill</li>
-                            <li class="temas">The Passenger</li>
-                            <li class="temas">Parallel Lines</li>
-                        </ol>
-                    </td>
-                </tr>
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-touch="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/avatars-000212492314-s5w3iq-t500x500.jpg" class="d-block w-100" alt="quiet is">
+                <div class="iframe_grid">
+                <iframe style="border-radius:14px" src="https://open.spotify.com/embed/album/7MjceL6iPFM86qxxeWCVEz?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+            </div>
+              <div class="carousel-item">
+                <img src="../images/riot on an empty.jpg" class="d-block w-100" alt="riot on">
+                
+                <div class="iframe_carou">
+                  <iframe style="border-radius:14px" src="https://open.spotify.com/embed/album/5QE8eXeN0q8M7atLb1fT6c?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> 
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <img src="../images/Declaration of dependence.jpg" class="d-block w-100" alt="declaration">
+                
+                <div class="iframe_carou">
+                  <iframe class="iframe" style="border-radius:14px" src="https://open.spotify.com/embed/album/1jsDXIvC8IFffURwvjwxfS?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+              </div>
+            </div>
            
-            </table> 
+            
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="Next">
+              <span class="carousel-control-next-icon" aria-hidden="false"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        
-        <div class="iframe_grid">
-            <iframe style="border-radius:14px" src="https://open.spotify.com/embed/album/7MjceL6iPFM86qxxeWCVEz?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        </div>
-        
-    
+
+       
     </main>
 
     <footer class="foot_flex">
-
-        <ul>
-            <li class="lista_foot"><a href="https://twitter.com/kings_of_c">Twitter</a></li>
-            <li class="lista_foot"><a href="https://es-la.facebook.com/kingsofconvenience">Facebook</a></li>
-            <li class="lista_foot"><a href="https://www.instagram.com/kingsofconvenience/">Instagram</a></li>
-        </ul>
+        <div class="icon_twitter">
+            <a href="https://twitter.com/kings_of_c"><i class="bi bi-twitter"></i></a>
+          </div>
+           
+          <div class="icon_facebook">
+            <a href="https://es-la.facebook.com/kingsofconvenience"><i class="bi bi-facebook"></i></a>
+          </div>
+             
+          <div class="icon_instagram">
+            <a href="https://www.instagram.com/kingsofconvenience/"><i class="bi bi-instagram"></i></a>
+          </div>
+          
+    
 
     </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 </body>
 </html>
