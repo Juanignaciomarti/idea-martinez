@@ -347,6 +347,24 @@ main{
    grid-area: a1;
 }
 
+
+.carousel-control-prev-icon {
+   height: 100px;
+   width: 100px;
+   outline: black;
+   background-size: 100%, 100%;
+   background-image: none;
+   padding-right: 130px;
+ }
+
+.carousel-control-prev-icon:after
+{
+  content: '<';
+  font-size: 55px;
+  color: black;
+}
+
+
 .carousel-control-next-icon {
    height: 100px;
    width: 100px;
@@ -369,27 +387,33 @@ main{
 @media only screen and (max-width:600px){
    .discografia_grid{
       display: grid;
-      grid-template-columns: 30% ;
-      grid-template-rows: 30% ;
+      grid-template-columns: 100px ;
+      grid-template-rows: 100px ;
       grid-template-areas: "a1"
                            "a2";
       justify-items: left;
+      padding-left: 50px;
    }
       
+   .titulo_disco{
+      padding-bottom: 350px;
+
+   }
+   
    .titulo_grid{
       grid-area: a1;
-      }
+      
+   }
       
    .tabla_grid{
       grid-area: a2;
-      font-size: smaller;
-      display: none;
+      
+      
    }
 
    .iframe_grid{
-      grid-area: a1;
-      padding-right: 100px;
-      padding-top: 100px;
+      grid-area: a2;
+
    }
 
 
@@ -397,7 +421,7 @@ main{
      
 .carousel-item{
    height: auto;
-   width: 400px;
+   width: 200px;
    
 }
  
@@ -412,6 +436,8 @@ main{
    text-align: center;
    padding-top: 15px;
 }
+
+  
 
 /* estilo a links*/
 footer a{
