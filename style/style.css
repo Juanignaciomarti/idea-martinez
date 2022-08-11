@@ -383,7 +383,6 @@ main{
 
 
 /*fin grid disografia*/
-
 @media only screen and (max-width:600px){
    .discografia_grid{
       display: grid;
