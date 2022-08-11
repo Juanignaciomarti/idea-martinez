@@ -1,0 +1,51 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+ }
+
+ main{
+    background-color: $color-fondo;
+  }
+
+ /*estilo footer*/
+footer{
+    display: flex;
+    background-color:whitesmoke;
+    border: 3px solid rgb(235, 159, 159);
+    justify-content: center;
+    flex-direction: row;
+
+    & :hover{
+        box-shadow: 5px;
+        color: blueviolet;
+        transform: scale(1.2,1.2);
+     
+    }
+      
+    
+     & a{
+        text-decoration: none;
+        color:rgb(255, 119, 0)
+    }
+     
+    
+    
+    .icon_twitter{
+        font-size: 30px;
+        padding-right: 25px;
+    }
+     
+    .icon_facebook{
+        font-size: 30px;
+        padding-right: 25px;
+     
+    }
+     
+    .icon_instagram{
+        font-size: 30px;
+        padding-right: 25px;
+    }
+
+ }
+ 

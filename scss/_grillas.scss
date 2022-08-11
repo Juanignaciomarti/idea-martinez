@@ -1,0 +1,380 @@
+/*grilla index*/
+
+.grid_article{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: "a1"
+                         "a2"
+                         "a3";
+    .subtitulo{
+        color: $color-titulos;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: block;
+        text-align: center;
+        padding-bottom: 25px;
+        padding-top: 20px;
+    }
+    .img_novedades{
+        width: 500px;
+        height: auto;
+        margin: auto;
+        grid-area: a2;
+        text-align: center;
+    }
+    .texto_1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: inline-block;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        margin: 50px;
+        grid-area: a3;
+        
+    }
+     
+}
+
+@media only screen and (max-width:600px){
+    .grid_article{
+        .portada{
+            height: 40%;
+            width: 40%;
+      
+         }
+      
+         .img_novedades{
+            display: flex;
+            text-align: center;
+            width: 90%;
+         }
+         
+         .texto_1{
+            text-align: center;
+            font-size: smaller;
+         }
+      
+    }
+   
+ 
+}
+ 
+
+/*comienzo estructura grid*/
+.grid_bio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: "a1 a1"
+                         "a2 a3";
+    .grid_titulo{
+        grid-area: a1;
+        
+    .titulo_bio{
+        color: $color-titulos;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        padding-top: 15px;
+         
+        }
+    }
+
+    .card-erlend{
+        display: flex;
+        grid-area: a2;
+        justify-content: space-evenly;
+        .subtitulo_erlend{
+            color: $color-titulos;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: block;
+            text-align: center;
+            padding-top: 15px;
+        }
+    }
+
+    .card-eirik{
+        display: flex;
+        grid-area: a3;
+        justify-content: space-evenly;
+        .subtitulo_eirik{
+            color: $color-titulos;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: block;
+            text-align: center;
+            padding-top: 15px;
+        }
+    }
+    
+
+}
+
+/*fin estructura grid*/
+/* media q bio*/
+@media only screen and (max-width:600px){
+    .portada{
+        height: 40%;
+        width: 40%;
+    }
+    
+    .grid_bio{
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 5% 30% 30%;
+       grid-template-areas: "a1"
+                            "a2"
+                            "a3";
+    }
+    
+    .grid_titulo{
+       grid-area: a1;
+       
+    } 
+    .grid_erlend{
+       grid-area: a2;
+ 
+    }  
+ 
+     .grid_eirik{
+       grid-area: a3;
+       padding-top: 200px;
+ 
+    }
+ 
+    .card-erlend{
+    display: flex;
+    flex-wrap: wrap;
+ 
+    }
+ 
+    .card-eirik{
+       padding-top: 50%;
+       display: flex;
+       flex-wrap: wrap;
+ 
+    }
+ 
+ }
+ 
+
+ /*estilo secciòn fechas*/
+/*grid*/
+.grid_fechas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr;
+    grid-template-areas: "a1"
+                         "a2";
+    .titulo_fechas{
+        color:$color-titulos;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: block;
+        text-align: center;
+        padding-top: 15px;
+        grid-area: a1;
+    }
+    .subtitulo_fechas{
+        color: $color-titulos;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: block;
+        text-align: center;
+        padding-top: 15px;
+        grid-area: a1;
+    }
+    .fechas{
+        padding-top: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        padding-bottom: 30px;
+        grid-area: a2;
+        list-style: none;
+
+        i {
+            color: $color-titulos;
+        }
+     
+    }  
+     
+}
+ 
+ 
+
+ /*estilo discografia*/
+/*grid discografia*/
+
+.discografia_grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr;
+    grid-template-areas: "a1"
+                         "a2";
+    justify-items: center;
+    .titulo_grid{
+        grid-area: a1;
+    }
+    
+    .titulo_disco{
+        color: $color-titulos;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        padding-top: 15px;
+    }
+    
+
+    .carousel-item{
+        height: auto;
+        width: 200px;
+        
+    }
+       
+    
+    .carousel-control-prev-icon {
+        height: 100px;
+        width: 100px;
+        outline: black;
+        background-size: 100%, 100%;
+        background-image: none;
+        padding-right: 130px;
+    
+        &:after{
+            content: '<';
+            font-size: 55px;
+            color: black;
+        }
+
+    }
+     
+     
+    .carousel-control-next-icon {
+        height: 100px;
+        width: 100px;
+        outline: black;
+        background-size: 100%, 100%;
+        background-image: none;
+        padding-left: 80px;
+        
+        &:after{
+            content: '>';
+            font-size: 55px;
+            color: black;
+        }    
+     
+    }
+    
+   
+}
+ 
+/*fin grid disografia*/
+ 
+@media only screen and (max-width:600px){
+    .discografia_grid{
+       display: grid;
+       grid-template-columns: 200px ;
+       grid-template-rows: 200px ;
+       grid-template-areas: "a1"
+                            "a2";
+       justify-items: left;
+       padding-left: 50px;
+    }
+       
+    .titulo_disco{
+       padding-bottom: 10px;
+ 
+    }
+    
+    .titulo_grid{
+       grid-area: a1;
+       
+    }
+       
+    .tabla_grid{
+       grid-area: a2;
+       padding-bottom: 20px;
+       
+    }
+ 
+    .iframe_grid{
+       grid-area: a2;
+ 
+    }
+ }  
+
+ /*Estilo seccion contacto*/
+/*grid contacto*/
+
+
+.grid_contact{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30%;
+    grid-template-areas: "a1"
+                         "a2";
+    padding-bottom: 150px;
+    
+    .titulo_contacto{
+        color: $color-titulos;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: block;
+        text-align: center;
+        padding-top: 15px;
+        grid-area: a1;
+    }
+     
+    form{
+        width: 335px;
+        min-height: 100px;
+        margin: auto;
+        padding-left: 50px;
+        border-radius: 2em;
+        background-color: rgb(223, 117, 52);
+        grid-area: a2;
+        
+        .mb-3{
+            width: auto;
+            display: inline-block;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+        }
+         
+         .form-floating{
+            width: auto;
+            display: inline-block;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+         
+        }
+         
+         .form-check{
+            width: auto;
+            display: inline-block;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+        }
+         
+         .col-12{
+            width: auto;
+            display: inline-block;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-bottom: 10px;
+            margin-top: 10px;
+         
+        }
+
+
+     }
+
+}
+ 
+
+@media only screen and (max-width:600px){
+    form{
+       width: 300px;
+       min-height: 100px;
+       margin: auto;
+       margin-top: 30px;
+       padding-left: 20px;
+       grid-area: a2;
+       font-size: small;
+       
+    }
+ 
+ }
