@@ -37,14 +37,11 @@ footer{
     }
      
     .icon_facebook{
-        font-size: 30px;
-        padding-right: 25px;
-     
+       @extend .icon_twitter;
     }
      
     .icon_instagram{
-        font-size: 30px;
-        padding-right: 25px;
+        @extend .icon_twitter;
     }
 
  }

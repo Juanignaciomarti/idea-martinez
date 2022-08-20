@@ -83,12 +83,17 @@
         display: flex;
         grid-area: a2;
         justify-content: space-evenly;
-        .subtitulo_erlend{
-            color: $color-titulos;
+        
+        @mixin subtitulo_bio{
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             display: block;
             text-align: center;
             padding-top: 15px;
+        }
+        
+        .subtitulo_erlend{
+            color: $color-titulos;
+            @include subtitulo_bio;
         }
     }
 
@@ -96,12 +101,17 @@
         display: flex;
         grid-area: a3;
         justify-content: space-evenly;
-        .subtitulo_eirik{
-            color: $color-titulos;
+        
+        @mixin subtitulo_bio{
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             display: block;
             text-align: center;
             padding-top: 15px;
+        }
+        
+        .subtitulo_eirik{
+            color: $color-titulos;
+            @include subtitulo_bio;
         }
     }
     

@@ -22,13 +22,7 @@ footer {
   footer a {
     text-decoration: none;
     color: #ff7700; }
-  footer .icon_twitter {
-    font-size: 30px;
-    padding-right: 25px; }
-  footer .icon_facebook {
-    font-size: 30px;
-    padding-right: 25px; }
-  footer .icon_instagram {
+  footer .icon_twitter, footer .icon_facebook, footer .icon_instagram {
     font-size: 30px;
     padding-right: 25px; }
 
@@ -296,7 +290,7 @@ header {
     flex-wrap: wrap;
     padding-top: 20px; }
   header .nav_boot :hover {
-    transform: scale(1.2, 1.2);
+    transform: scale(1.1, 1.1);
     color: #ff7700; }
 
 /*NAV FLEX*/
