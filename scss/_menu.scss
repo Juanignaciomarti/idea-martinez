@@ -1,7 +1,7 @@
  /*Estido header*/
  header{
     font-family: $fuentes;
-    border: 2px solid rgb(235, 159, 159);
+    border: $borde;
      
     .portada_flex{
         display: flex;

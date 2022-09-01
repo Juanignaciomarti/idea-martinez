@@ -268,7 +268,7 @@ nav {
 /*Estido header*/
 header {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  border: 2px solid #eb9f9f; }
+  border: 3px solid #eb9f9f; }
   header .portada_flex {
     display: flex;
     align-items: center;
