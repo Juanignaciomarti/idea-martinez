@@ -16,6 +16,7 @@ footer{
     justify-content: center;
     flex-direction: row;
 
+
     & :hover{
         box-shadow: 5px;
         color: blueviolet;
@@ -46,3 +47,45 @@ footer{
 
  }
  
+ form{
+    width: 335px;
+    min-height: 100px;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 2em;
+    background-color: rgb(223, 117, 52);
+    grid-area: a2;
+    width: auto;
+    display: inline-block;
+    font-family: $fuentes;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+
+    }
+
+    @media only screen and (max-width:600px){
+        form{
+           width: 300px;
+           min-height: 100px;
+           margin: auto;
+           margin-top: 30px;
+           padding-left: 20px;
+           grid-area: a2;
+           font-size: small;
+           
+        }
+     
+     }
+    
+    nav{
+        color: $color-titulos;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-top: 20px;
+
+
+    }

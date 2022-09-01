@@ -9,7 +9,7 @@
                          "a3";
     .subtitulo{
         color: $color-titulos;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family:$fuentes;
         display: block;
         text-align: center;
         padding-bottom: 25px;
@@ -24,13 +24,12 @@
         text-align: center;
     }
     .texto_1{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: $fuentes;
         display: inline-block;
         text-align: center;
-        padding-top: 20px;
-        padding-bottom: 15px;
+        padding-top: 10px;
         padding-left: 40px;
-        margin: 50px;
+        
         grid-area: a3;
         
     }
@@ -75,7 +74,7 @@
         
     .titulo_bio{
         color: $color-titulos;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: $fuentes;
         text-align: center;
         padding-top: 15px;
          
@@ -88,7 +87,7 @@
         justify-content: space-evenly;
         
         @mixin subtitulo_bio{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: $fuentes;
             display: block;
             text-align: center;
             padding-top: 15px;
@@ -106,7 +105,7 @@
         justify-content: space-evenly;
         
         @mixin subtitulo_bio{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: $fuentes;
             display: block;
             text-align: center;
             padding-top: 15px;
@@ -120,9 +119,9 @@
     
 
 }
-
 /*fin estructura grid*/
 /* media q bio*/
+ 
 @media only screen and (max-width:600px){
     .portada{
         height: 40%;
@@ -147,30 +146,27 @@
  
     }  
  
-     .grid_eirik{
+    .grid_eirik{
        grid-area: a3;
        padding-top: 200px;
  
     }
  
     .card-erlend{
-    display: flex;
-    flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
  
     }
  
     .card-eirik{
-       padding-top: 50%;
+       padding-top: 80%;
        display: flex;
        flex-wrap: wrap;
  
     }
- 
- }
- 
+}  
+ /*Grid fechas*/
 
- /*estilo secciòn fechas*/
-/*grid*/
 .grid_fechas{
     display: grid;
     grid-template-columns: 1fr;
@@ -179,7 +175,7 @@
                          "a2";
     .titulo_fechas{
         color:$color-titulos;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: $fuentes;
         display: block;
         text-align: center;
         padding-top: 15px;
@@ -187,7 +183,7 @@
     }
     .subtitulo_fechas{
         color: $color-titulos;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: $fuentes;
         display: block;
         text-align: center;
         padding-top: 15px;
@@ -195,7 +191,7 @@
     }
     .fechas{
         padding-top: 20px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: $fuentes;
         text-align: center;
         padding-bottom: 30px;
         grid-area: a2;
@@ -210,8 +206,6 @@
 }
  
  
-
- /*estilo discografia*/
 /*grid discografia*/
 
 .discografia_grid{
@@ -227,19 +221,17 @@
     
     .titulo_disco{
         color: $color-titulos;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: $fuentes;
         text-align: center;
         padding-top: 15px;
     }
     
-
     .carousel-item{
         height: auto;
-        width: 200px;
+        width: 400px;
         
     }
        
-    
     .carousel-control-prev-icon {
         height: 100px;
         width: 100px;
@@ -255,7 +247,6 @@
         }
 
     }
-     
      
     .carousel-control-next-icon {
         height: 100px;
@@ -273,45 +264,50 @@
      
     }
     
+    @media only screen and (max-width:600px){
+        .discografia_grid{
+           display: grid;
+           grid-template-columns: 200px ;
+           grid-template-rows: 200px ;
+           grid-template-areas: "a1"
+                                "a2";
+           justify-items: left;
+           padding-left: 50px;
+        }
+         
+        .carousel-item{
+            height: auto;
+            width: 200px;
+        }
+    
+        .titulo_disco{
+           padding-bottom: 10px;
+     
+        }
+        
+        .titulo_grid{
+           grid-area: a1;
+           
+        }
+           
+        .tabla_grid{
+           grid-area: a2;
+           padding-bottom: 20px;
+           
+        }
+     
+        .iframe_grid{
+           grid-area: a2;
+     
+        }
+     }  
    
 }
  
 /*fin grid disografia*/
  
-@media only screen and (max-width:600px){
-    .discografia_grid{
-       display: grid;
-       grid-template-columns: 200px ;
-       grid-template-rows: 200px ;
-       grid-template-areas: "a1"
-                            "a2";
-       justify-items: left;
-       padding-left: 50px;
-    }
-       
-    .titulo_disco{
-       padding-bottom: 10px;
- 
-    }
-    
-    .titulo_grid{
-       grid-area: a1;
-       
-    }
-       
-    .tabla_grid{
-       grid-area: a2;
-       padding-bottom: 20px;
-       
-    }
- 
-    .iframe_grid{
-       grid-area: a2;
- 
-    }
- }  
 
- /*Estilo seccion contacto*/
+
 /*grid contacto*/
 
 
@@ -325,70 +321,13 @@
     
     .titulo_contacto{
         color: $color-titulos;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        display: block;
+        font-family: $fuentes;
         text-align: center;
-        padding-top: 15px;
+        display: block;
+        padding-top: 10px;
         grid-area: a1;
-    }
-     
-    form{
-        width: 335px;
-        min-height: 100px;
-        margin: auto;
-        padding-left: 50px;
-        border-radius: 2em;
-        background-color: rgb(223, 117, 52);
-        grid-area: a2;
         
-        .mb-3{
-            width: auto;
-            display: inline-block;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            margin-top: 10px;
-        }
-         
-         .form-floating{
-            width: auto;
-            display: inline-block;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            margin-top: 10px;
-         
-        }
-         
-         .form-check{
-            width: auto;
-            display: inline-block;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            margin-top: 10px;
-        }
-         
-         .col-12{
-            width: auto;
-            display: inline-block;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            padding-bottom: 10px;
-            margin-top: 10px;
-         
-        }
-
-
-     }
-
-}
- 
-
-@media only screen and (max-width:600px){
-    form{
-       width: 300px;
-       min-height: 100px;
-       margin: auto;
-       margin-top: 30px;
-       padding-left: 20px;
-       grid-area: a2;
-       font-size: small;
-       
     }
- 
- }
+          
+}
 

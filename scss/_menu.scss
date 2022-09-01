@@ -1,16 +1,7 @@
  /*Estido header*/
  header{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:whitesmoke;
+    font-family: $fuentes;
     border: 2px solid rgb(235, 159, 159);
-
-    .nav_flex{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        padding-top: 20px;
-    }
      
     .portada_flex{
         display: flex;
@@ -19,14 +10,32 @@
         flex-wrap: wrap;
         padding-top: 20px;
     }
-    
-    .nav_boot :hover{
+    .navbar-nav :hover{
    
-        transform: scale(1.1, 1.1);
-        color: rgb(255, 119, 0);
+        transform: scale(1, 1);
+        color: $color-titulos;
      
     }
 
+    .navbar-nav{
+        position: relative;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+
+    @media only screen and (max-width:600px){
+
+        .portada_flex{
+            display: inline-block;
+            
+        }
+    
+    
+    }
+        
+    
 }
 
- /*NAV FLEX*/
+      
+   
+
