@@ -29,7 +29,6 @@
         text-align: center;
         padding-top: 10px;
         padding-left: 40px;
-        
         grid-area: a3;
         
     }
@@ -167,7 +166,7 @@
 }  
  /*Grid fechas*/
 
-.grid_fechas{
+ .grid_fechas{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr;
@@ -197,13 +196,14 @@
         grid-area: a2;
         list-style: none;
 
-        i {
-            color: $color-titulos;
-        }
      
     }  
      
 }
+
+   
+     
+
  
  
 /*grid discografia*/
@@ -330,4 +330,3 @@
     }
           
 }
-

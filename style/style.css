@@ -40,6 +40,8 @@ form {
   margin-top: 10px;
   padding-bottom: 10px;
   padding-top: 30px; }
+  form .col-12 {
+    padding-left: 30px; }
 
 @media only screen and (max-width: 600px) {
   form {
@@ -58,6 +60,11 @@ nav {
   justify-content: space-around;
   flex-wrap: wrap;
   padding-top: 20px; }
+
+i {
+  color: #ff7700; }
+  i:hover {
+    color: blueviolet; }
 
 /*grilla index*/
 .grid_article {
@@ -186,8 +193,6 @@ nav {
     padding-bottom: 30px;
     grid-area: a2;
     list-style: none; }
-    .grid_fechas .fechas i {
-      color: #ff7700; }
 
 /*grid discografia*/
 .discografia_grid {
