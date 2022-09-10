@@ -129,6 +129,8 @@ i {
       display: block;
       text-align: center;
       padding-top: 15px; }
+    .grid_bio .card-erlend:hover {
+      transform: scale(1.1, 1.1); }
   .grid_bio .card-eirik {
     display: flex;
     grid-area: a3;
@@ -139,6 +141,8 @@ i {
       display: block;
       text-align: center;
       padding-top: 15px; }
+    .grid_bio .card-eirik:hover {
+      transform: scale(1.1, 1.1); }
 
 /*fin estructura grid*/
 /* media q bio*/
