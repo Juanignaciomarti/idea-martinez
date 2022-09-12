@@ -1,64 +1,71 @@
-/*grilla index*/
-
-.grid_article{
+.grid{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 33% 33% 33%;
-    grid-template-areas: "a1"
-                         "a2"
-                         "a3";
-    .subtitulo{
-        color: $color-titulos;
-        font-family:$fuentes;
-        display: block;
-        text-align: center;
-        padding-bottom: 25px;
-        padding-top: 20px;
-    }
-    
-    .img_novedades{
-        width: 500px;
-        height: auto;
-        margin: auto;
-        grid-area: a2;
-        text-align: center;
-    }
-    .texto_1{
-        font-family: $fuentes;
-        display: inline-block;
-        text-align: center;
-        padding-top: 10px;
-        padding-left: 40px;
-        grid-area: a3;
+    width: 100%;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+   
+      
+    .grid-item {
+        background-color: #fff;
+        border-radius: 0.4rem;
+        overflow: hidden;
+        box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: 0.2s;
         
     }
-     
+      
+    .grid-item:hover {
+        transform: translateY(-0.5%);
+        box-shadow: 0 4rem 5rem rgba(0, 0, 0, 0.5);
+    }
+      
+    .card-img {
+        display: block;
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+    }
+      
+    .card-content {
+        padding: 1rem;
+        padding-bottom: 1rem;
+    }
+      
+
+      
+    .card-text {
+        letter-spacing: 0.1rem;
+        line-height: 1.7;
+        margin-bottom: 2.5rem;
+        font-family: $fuentes;
+    }
+      
+
+}
+ 
+.subtitulo{
+    color: $color-titulos;
+    font-family: $fuentes;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-@media only screen and (max-width:600px){
-    .grid_article{
-        .portada{
-            height: 40%;
-            width: 40%;
-      
-         }
-      
-         .img_novedades{
-            display: flex;
-            text-align: center;
-            width: 90%;
-         }
-         
-         .texto_1{
-            text-align: center;
-            font-size: x-small;
-            padding-right: 40px;
-         }
-      
+@media only screen and (max-width: 600px) {
+    
+    .grid{
+        display: flex;
+        text-align: center;
+        width: 100;
+        flex-direction: column;
     }
-   
- 
-}
+    
+
+    }
  
 
 /*comienzo estructura grid*/
@@ -203,10 +210,15 @@
         padding-bottom: 30px;
         grid-area: a2;
         list-style: none;
-
-     
     }  
-     
+    
+    .img_fechas{
+        width: 500px;
+        height: auto;
+        margin: auto;
+        justify-content: end;
+        
+    }
 }
 
    
